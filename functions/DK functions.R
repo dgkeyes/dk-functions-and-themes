@@ -16,7 +16,7 @@ dk.summarize.categorical <- function(dataset) {
      return(dataset)
 }
 
-usethis::use_git()
+
 
 # Diverging stacked bar ---------------------------------------------------
 
