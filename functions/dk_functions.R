@@ -2,7 +2,6 @@ library(tidyverse)
 library(scales)
 
 
-
 # Summarize categorical ---------------------------------------------------
 
 dk.summarize.categorical <- function(dataset) {
