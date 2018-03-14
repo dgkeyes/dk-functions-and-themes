@@ -60,3 +60,6 @@ dk_100_stacked_bar <- function(dataset) {
                 legend.title = element_blank()) +
           scale_y_continuous(label = percent)
 }
+
+
+
