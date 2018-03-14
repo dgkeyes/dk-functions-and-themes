@@ -9,7 +9,7 @@ dk_summarize_categorical <- function(dataset) {
           gather() %>%
           group_by(key) %>%
           count(value) %>%
-          filter(!is.na(value)) %>%
+          # filter(!is.na(value)) %>%
           ungroup() %>%
           set_names(c("item", "response", "number"))
      return(dataset)
