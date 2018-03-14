@@ -4,7 +4,7 @@ library(scales)
 
 # Summarize categorical ---------------------------------------------------
 
-dk.summarize.categorical <- function(dataset) {
+dk_summarize_categorical <- function(dataset) {
      dataset <- dataset %>%
           gather() %>%
           group_by(key) %>%
