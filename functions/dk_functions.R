@@ -61,4 +61,18 @@ dk_100_stacked_bar <- function(dataset) {
 }
 
 
+# Propotions --------------------------------------------------------------
 
+dk_proportions <- function(n) {
+     temp <- round(prop.table(n), digits = 2)
+}
+
+
+
+# Delete stuff in MNA survey questions ------------------------------------
+
+dk_delete_mna_extras <- function(item) {
+     item <- str_replace(item, "\\[", "")
+     item <- str_replace(item, "\\[", "")
+     item <- str_replace(item, "\\.", "")
+}
