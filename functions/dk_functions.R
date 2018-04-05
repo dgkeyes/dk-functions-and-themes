@@ -73,6 +73,6 @@ dk_proportions <- function(n) {
 
 dk_delete_mna_extras <- function(item) {
      item <- str_replace(item, "\\[", "")
-     item <- str_replace(item, "\\]", "")
+     item <- str_replace(item, "]", "")
      item <- str_replace(item, "\\.", "")
 }
