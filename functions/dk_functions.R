@@ -61,4 +61,9 @@ dk_100_stacked_bar <- function(dataset) {
 }
 
 
+# Propotions --------------------------------------------------------------
+
+dk_proportions <- function(n) {
+     temp <- round(prop.table(n), digits = 2)
+}
 
