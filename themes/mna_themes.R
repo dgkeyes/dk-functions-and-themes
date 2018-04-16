@@ -20,8 +20,8 @@ mna.base.theme <- theme(
      panel.grid.minor = element_blank(),
      panel.background = element_rect(fill = "transparent",colour = NA),
      plot.background = element_rect(fill = "transparent",colour = NA),
-     text = element_text(family="Arial", color = mna.dark.gray),
-     axis.text = element_text(family="Arial", color = mna.dark.gray),
+     text = element_text(color = mna.dark.gray),
+     axis.text = element_text(color = mna.dark.gray),
      axis.title = element_blank(),
      axis.ticks = element_blank(),
      panel.grid.major = element_line(color = mna.light.gray)

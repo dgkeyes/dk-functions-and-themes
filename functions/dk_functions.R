@@ -67,7 +67,11 @@ dk_proportions <- function(n) {
      temp <- round(prop.table(n), digits = 2)
 }
 
-
+dk_delete_mna_extras <- function(item) {
+     item <- str_replace(item, "\\[", "")
+     item <- str_replace(item, "\\]", "")
+     item <- str_replace(item, "\\.", "")
+}
 
 # Delete stuff in MNA survey questions ------------------------------------
 
