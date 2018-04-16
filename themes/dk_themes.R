@@ -11,7 +11,7 @@ dkpallette2 <- c("#a9a9a9", "#5c9134", "#a9a9a9","#2667a7", "#c63320")
 
 # Import fonts
 
-font_import(pattern="Montserrat")
+# font_import(pattern="Montserrat")
 
 # Define themes
 
@@ -46,3 +46,25 @@ dkbartheme <- dktheme + theme(
 dkcolumntheme <- dktheme + theme(
   axis.text.y = element_blank()
 )
+
+dk_summarize_open_ended <- function(df) {
+     responses <- df %>%
+          select(contains(v)) %>%
+          set_names("response") %>%
+          filter(!is.na(response)) %>%
+          mutate(response = str_trim(response)) %>%
+          filter(!str_detect(response, fixed("n/a", ignore_case = TRUE))) %>%
+          filter(!str_detect(response, fixed("No", ignore_case = TRUE))) %>%
+          filter(!str_detect(response, fixed("None", ignore_case = TRUE))) %>%
+          filter(!str_detect(response, fixed("Not sure", ignore_case = TRUE)))
+     
+     responses %>%
+          kable("html", col.names = "Responses") %>%
+          kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+}
+
+# dk_summarize_open_ended <- function(df, colnames) {
+#      df %>%
+#           kable("html", col.names = colnames) %>%
+#           kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+# }

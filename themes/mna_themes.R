@@ -11,9 +11,9 @@ mna.light.gray <- "#eeeeee"
 
 mna.text.size <- 14
 
-library(extrafont)
-font_import(pattern = "Arial")
-loadfonts()
+# library(extrafont)
+# font_import(pattern = "Arial")
+# loadfonts()
 
 
 mna.base.theme <- theme(
