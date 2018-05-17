@@ -61,6 +61,8 @@ dk_100_stacked_bar <- function(dataset) {
 }
 
 
+
+
 # Propotions --------------------------------------------------------------
 
 dk_proportions <- function(n) {
@@ -79,4 +81,13 @@ dk_delete_mna_extras <- function(item) {
      item <- str_replace(item, "\\[", "")
      item <- str_replace(item, "\\]", "")
      item <- str_replace(item, "\\.", "")
+}
+
+
+# Make bulleted list ------------------------------------------------------
+
+dk_bulleted_list <- function(string.list) {
+     
+     cat(paste('-', string.list), sep = '\n')
+     
 }
